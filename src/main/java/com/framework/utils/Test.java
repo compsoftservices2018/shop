@@ -29,53 +29,6 @@ import com.razorpay.RazorpayException;
 
 public class Test {
  
-    public static void main(String[] args) {
  
-    	
-    	RestTemplate restTemplate = new RestTemplate();
-
-    	//Map request = new Map();
-    	Map<String, Object> request = new HashMap<>();
-    	request.put("amount", 100);
-    	request.put("currency", "INR");
-    	request.put("receipt", "Receipt no. 1");
-    	//restTemplate.h
-    	
-    	//HttpHeaders headers = new HttpHeaders() 
-    	
-    	/*{{
-	         String auth = "rzp_test_f8H88RD4IRBS5I" + ":" + "rrIJW7KZUq0rnjY33fumIrs3";
-	         byte[] encodedAuth = Base64.encodeBase64( 
-	            auth.getBytes(Charset.forName("US-ASCII")) );
-	         String authHeader = "Basic " + new String( encodedAuth );
-	         set( "Authorization", authHeader );
-	        
-	      }};
-	    */  
-    	String auth = "rzp_test_f8H88RD4IRBS5I" + ":" + "rrIJW7KZUq0rnjY33fumIrs3";
-        byte[] encodedAuth = Base64.encodeBase64( 
-           auth.getBytes(Charset.forName("US-ASCII")) );
-        String authHeader = "Basic " + new String( encodedAuth );
-        //set( "Authorization", authHeader );
-	      
-	      HttpHeaders headers = new HttpHeaders();
-	   // set `content-type` header
-	   headers.setContentType(MediaType.APPLICATION_JSON);
-	   // set `accept` header
-	   headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
-	   
-	   headers.set( "Authorization", authHeader );
-    	
-	      HttpEntity<Map<String, Object>> entity = new HttpEntity<>(request, headers);
-	      
-	      ResponseEntity<JSONObject> response = restTemplate.postForEntity("https://api.razorpay.com/v1/orders", entity, JSONObject.class);
-	      System.out.println("foo " + response.getBody().get("id"));
-    	//JSONObject foo = restTemplate.postForObject("https://api.razorpay.com/v1/orders", request, JSONObject.class);
-	    //  restTemplate.exchange
-	     // ("https://api.razorpay.com/v1/orders", HttpMethod.POST, new HttpEntity<T>(header), JSONObject.class);
-    	//System.out.println("foo " + foo.toString());
-    	
-    }
-    
    
 }

@@ -1,4 +1,4 @@
-package com.compsoft.shop.shop;
+package com.compsoft.shop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
