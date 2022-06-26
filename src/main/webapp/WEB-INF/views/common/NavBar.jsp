@@ -1,4 +1,4 @@
-<%@ page import="com.compsoft.shopportal.model.MstCustomer"%>
+<%@ page import="com.compsoft.shop.model.MstCustomer"%>
 
 <header class="header-area overlay ">
 	<nav

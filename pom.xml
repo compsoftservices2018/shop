@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.compsoft.shop</groupId>
-	<artifactId>onlineshop</artifactId>
+	<artifactId>shop</artifactId>
 	<version>1.0.0</version>
 	<packaging>war</packaging>
 	<name>shop</name>

@@ -1,6 +1,6 @@
 <%@ include file="../common/header.jsp"%>
-<%@ page import="com.compsoft.shopportal.model.TranOrder"%>
-<%@ page import="com.compsoft.shopportal.model.TranOrderDetail"%>
+<%@ page import="com.compsoft.shop.model.TranOrder"%>
+<%@ page import="com.compsoft.shop.model.TranOrderDetail"%>
 
 <%
 	TranOrder loCustOrder = (TranOrder) request.getAttribute("payment_order");

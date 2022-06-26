@@ -1,7 +1,7 @@
 <%@ include file="../common/header.jsp"%>
-<%@ page import="com.compsoft.shopportal.model.TranOrder"%>
-<%@ page import="com.compsoft.shopportal.model.TranOrderDetail"%>
-<%@ page import="com.compsoft.shopportal.model.TranOrderPayment"%>
+<%@ page import="com.compsoft.shop.model.TranOrder"%>
+<%@ page import="com.compsoft.shop.model.TranOrderDetail"%>
+<%@ page import="com.compsoft.shop.model.TranOrderPayment"%>
 <%
 	TranOrder loTranOrder = (TranOrder) request.getAttribute("TranOrder");
 %>

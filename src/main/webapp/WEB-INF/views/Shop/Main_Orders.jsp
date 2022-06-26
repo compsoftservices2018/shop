@@ -1,5 +1,5 @@
 <%@ include file="../common/header.jsp"%>
-<%@ page import="com.compsoft.shopportal.model.TranOrder"%>
+<%@ page import="com.compsoft.shop.model.TranOrder"%>
 <style>
 div.dataTables_wrapper div.dataTables_filter input {
 	width: 150px;
