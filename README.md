@@ -12,7 +12,7 @@
 
 - Setting port 
 
-  - Open \Tomcat 9.0\conf\server.xml
+  - Open \Tomcat 9.0\conf\server.xml1
 
     <Connector port="8088" protocol="HTTP/1.1"
                    connectionTimeout="20000"
